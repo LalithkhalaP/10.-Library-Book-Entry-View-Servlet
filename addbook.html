@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management</title>
+</head>
+<body>
+
+<form action="LibraryServlet" method="post">
+    Book Title: <input type="text" name="title"><br><br>
+    Author: <input type="text" name="author"><br><br>
+    Price: <input type="number" name="price"><br><br>
+    <input type="hidden" name="action" value="add">
+    <input type="submit" value="Add Book">
+</form>
+
+<br>
+
+<form action="LibraryServlet" method="post">
+    <input type="hidden" name="action" value="view">
+    <input type="submit" value="View Books">
+</form>
+
+</body>
+</html>
